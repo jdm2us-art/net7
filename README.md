@@ -1,4 +1,4 @@
-Задание 1.
+##Задание 1.
 
 https://u.netology.ru/backend/uploads/markdown_images/image/348220/picture_hw_3_02_1.png
 
@@ -12,6 +12,8 @@ https://u.netology.ru/backend/uploads/markdown_images/image/348220/picture_hw_3_
  
 
 Приведите ответ в виде картинки со схемой (внесите изменения) или в виде таблицы. Обоснование в свободной форме.
+
+##ОТВЕТ:
 
 Чтобы определить типы портов (Root, Designated, Blocked/Non-Designated), нужно учесть, что корневым коммутатором является SW1.
 

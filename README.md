@@ -32,16 +32,19 @@ https://u.netology.ru/backend/uploads/markdown_images/image/348220/picture_hw_3_
 Это порты на некорневых коммутаторах, которые обеспечивают кратчайший путь к корневому коммутатору (SW1).
 
 · SW2: Выбирает между te0/1 (Cost 2) и ge0/2 (Cost 4). te0/1 (к SW1) — Root Port. \
-· SW3: Выбирает между ge0/1 (к SW1, Cost 4) и fa0/3 (к SW4, Cost 19). ge0/1 — Root Port. \
+· SW3: Выбирает между ge0/1 (к SW1, Cost 4) и fa0/3 (к SW4, Cost 19). ge0/1 — Root Port. 
+
 · SW4: Имеет 3 пути. Считаем стоимость до SW1: \
   · Через fa0/3 (SW4) -> fa0/3 (SW3) -> ge0/1 (SW3): 19 + 4 = 23. \
   · Через ge0/1 (SW4) -> te0/2 (SW2) -> te0/1 (SW2): 4 + 2 = 6. \
   · Через ge0/2 (SW4) -> ge0/2 (SW5) -> ge0/1 (SW5) -> te0/2 (SW2) -> te0/1 (SW2): 4 + 4 + 4 + 2 = 14. \
   · ge0/1 (в сторону SW2) — Root Port (Cost 6). \
+
 · SW5: Два пути к SW1: \
   · Через ge0/1 (SW5) -> te0/2 (SW2) -> te0/1 (SW2): 4 + 2 = 6. \
   · Через ge0/2 (SW5) -> ge0/2 (SW4) -> ge0/1 (SW4) -> te0/2 (SW2) -> te0/1 (SW2): 4 + 4 + 4 + 2 = 14. \
-  · ge0/1 (в сторону SW2) — Root Port. \
+  · ge0/1 (в сторону SW2) — Root Port. 
+
 · SW6: Путь к SW1: fa0/1 -> fa0/2 (SW3) -> ge0/1 (SW3). Cost: 19 + 4 = 23. fa0/1 — Root Port. \
 · SW7: Путь к SW1: fa0/1 -> fa0/4 (SW3) -> ge0/1. Cost: 19 + 4 = 23. fa0/1 — Root Port. \
 · SW8: Путь к SW1: fa0/1 -> fa0/4 (SW4) -> ge0/1 (SW4) -> te0/2 (SW2) -> te0/1 (SW2). Cost: 19 + 4 + 2 = 25. fa0/1 — Root Port. \

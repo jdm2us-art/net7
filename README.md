@@ -1,6 +1,6 @@
 ## Задание 1.
 
-https://u.netology.ru/backend/uploads/markdown_images/image/348220/picture_hw_3_02_1.png
+![1](https://u.netology.ru/backend/uploads/markdown_images/image/348220/picture_hw_3_02_1.png)
 
 Для заданной схемы сети определите:
 
